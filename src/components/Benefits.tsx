@@ -1,5 +1,28 @@
 import CardBenefit from "./CardBenefit";
 
+const benefitData = [
+    {
+        title: 'Test1',
+        image: 'surface',
+        id: 1
+    },
+    {
+        title: 'Test2',
+        image: 'surface',
+        id: 2
+    },
+    {
+        title: 'Test3',
+        image: 'surface',
+        id: 3
+    },
+    {
+        title: 'Test4',
+        image: 'surface',
+        id: 4
+    }
+]
+
 function Benefits () {
     return (
         <section className="benefits">
@@ -10,14 +33,8 @@ function Benefits () {
                     </div>
                 </div>
                 <div className="benefits__list">
-                    <CardBenefit />
-                    <CardBenefit />
-                    <CardBenefit />
-                    <CardBenefit />
-                    <CardBenefit />
-                    <CardBenefit />
-                    <CardBenefit />
-                    <CardBenefit />
+                    {benefitData.map(benefit => <CardBenefit key={benefit.id} {...benefit}/> )}
+                    {/*{benefitData.map(benefit => <CardBenefit key={benefit.id} icon={benefit.image} title={}/> )}*/}
                 </div>
             </div>
         </section>
