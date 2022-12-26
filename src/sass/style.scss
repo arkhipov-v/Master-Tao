@@ -1,0 +1,34 @@
+// Служебные
+@import "general/mixins";
+@import "general/variables";
+@import "general/fonts";
+@import "general/base";
+@import "general/typography";
+
+// Компоненты
+@import "components/button";
+@import "components/input";
+@import "components/textaria";
+@import "components/checkbox-item";
+@import "components/headline";
+@import "components/burger-menu";
+@import "components/top-menu";
+@import "components/top-nav";
+@import "components/header";
+@import "components/hero";
+@import "components/card-delivery";
+@import "components/delivery-details";
+@import "components/card-services";
+@import "components/card-benefit";
+@import "components/card-about";
+@import "components/delivery-form";
+@import "components/contact-form";
+
+// Sections
+@import "components/delivery";
+@import "components/benefits";
+@import "components/goods";
+@import "components/services";
+@import "components/about";
+@import "components/questions";
+@import "components/partnership";

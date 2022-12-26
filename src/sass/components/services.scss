@@ -1,0 +1,12 @@
+.services {
+  padding-block: 100px;
+  background-color: var(--bg-dark);
+
+  @include media-max(768px) {
+    padding-block: 50px;
+  }
+
+  &__inner {
+    margin-top: 50px;
+  }
+}

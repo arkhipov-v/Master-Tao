@@ -1,0 +1,11 @@
+.partnership {
+  padding-block: 100px;
+
+  @include media-max(768px) {
+    padding-block: 50px;
+  }
+
+  &__inner {
+    margin-top: 50px;
+  }
+}

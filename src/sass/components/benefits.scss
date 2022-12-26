@@ -1,0 +1,12 @@
+.benefits {
+  padding-block: 90px;
+  background-color: var(--bg-dark);
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px 10px;
+    justify-items: center;
+    margin-top: 50px;
+  }
+}

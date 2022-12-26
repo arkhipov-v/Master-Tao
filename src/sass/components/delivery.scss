@@ -1,0 +1,49 @@
+.delivery {
+  padding-top: 80px;
+
+  @include media-max(992px) {
+    padding-block: 50px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 625px;
+
+    @include media-max(992px) {
+      max-width: 100%;
+    }
+  }
+
+  &__headline {
+    margin-bottom: 60px;
+
+    @include media-max(480px) {
+      margin-bottom: 40px;
+      text-align: center;
+
+      &::after {
+        margin-inline: auto;
+      }
+    }
+  }
+
+  &__banner {
+    width: 100%;
+    max-width: 625px;
+
+    @include media-max(1200px) {
+      align-self: flex-end;
+    }
+
+    @include media-max(992px) {
+      display: none;
+    }
+  }
+}

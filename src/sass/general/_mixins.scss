@@ -1,0 +1,27 @@
+// Mixin for fonts
+@mixin font-face($font-name, $file-name, $weight, $style: normal ) {
+  @font-face {
+    font-family: '#{$font-name}';
+    src: url('../../../public/assets/fonts/#{$font-name}/#{$file-name}.woff') format('woff'),
+    url('../../../public/assets/fonts/#{$font-name}/#{$file-name}.woff2') format('woff2');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+// Mixin for input placeholder
+@mixin input-placeholder {
+  &::-webkit-input-placeholder { @content }
+  &:-moz-placeholder           { @content }
+  &::-moz-placeholder          { @content }
+  &:-ms-input-placeholder      { @content }
+}
+
+// Mixin for media queries
+@mixin media-max($screen-size) {
+  @media (max-width: $screen-size) { @content }
+}
+
+@mixin media-min($screen-size) {
+  @media (min-width: $screen-size) { @content }
+}

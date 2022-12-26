@@ -1,0 +1,73 @@
+.top-menu {
+  @include media-max(992px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
+
+  &--open {
+    opacity: 1;
+    visibility: visible;
+
+    .top-menu__inner {
+      transform: translateX(0);
+    }
+
+  }
+
+  &__overlay {
+    @include media-max(992px) {
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__inner {
+    @include media-max(992px) {
+      height: 100%;
+      max-width: 450px;
+      margin-left: auto;
+      padding: 30px 25px;
+      text-align: right;
+      background-color: var(--bg-darken);
+
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+
+    @include media-max(480px) {
+      text-align: center;
+    }
+  }
+
+  &__button {
+    margin-top: 35px;
+
+    @include media-min(992px) {
+      display: none;
+    }
+  }
+
+  &__burger-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    @include media-min(992px) {
+      display: none;
+    }
+
+    @include media-max(480px) {
+      top: 10px;
+      left: initial;
+      right: 0;
+    }
+  }
+}
+

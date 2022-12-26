@@ -1,0 +1,40 @@
+.top-nav {
+  display: flex;
+  align-items: center;
+
+  @include media-max(992px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @include media-max(480px) {
+    align-items: center;
+  }
+
+  &__link {
+    padding: 2px 5px;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+
+      @include media-max(1200px) {
+        margin-right: 20px;
+      }
+
+      @include media-max(992px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+      @media (any-hover) {
+        &:hover {
+          text-decoration: underline;
+      }
+    }
+
+    @include media-max(992px) {
+      font-size: 20px;
+    }
+  }
+}

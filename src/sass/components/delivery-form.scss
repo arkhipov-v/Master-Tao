@@ -1,0 +1,17 @@
+.delivery-form {
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+    padding: 40px 50px 70px;
+    border-radius: 20px;
+    background-color: var(--bg-dark);
+    filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32));
+
+    @include media-max(600px) {
+      grid-template-columns: 1fr;
+      padding: 40px 30px 35px;
+    }
+  }
+}
