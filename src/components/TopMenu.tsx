@@ -18,8 +18,11 @@ function TopMenu({closeHandler, show
                         Оставить заявку
                         <span className="button__icon"><img src="/img/icons/arrow-circle-left.svg" alt=""/></span>
                     </button>
-                    <button type="button" className="top-menu__burger-menu burger-menu burger-menu--close"
-                            onClick={closeHandler}>
+                    <button
+                        type="button"
+                        className="top-menu__burger-menu burger-menu burger-menu--close"
+                        onClick={closeHandler}>
+
                         <svg xmlns="http://www.w3.org/2000/svg" clipRule="evenodd" fillRule="evenodd"
                              strokeLinejoin="round" strokeMiterlimit="2" viewBox="0 0 24 24">
                             <path

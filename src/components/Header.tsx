@@ -8,7 +8,8 @@ function Header() {
 
     let [stateMenu, setStateMenu] = useState(false)
     console.log('Header render')
-    const changeStateMenu = () => {
+
+    const toggleMenu = () => {
         setStateMenu(prev => !prev)
     }
 
@@ -40,7 +41,7 @@ function Header() {
                     <button className="header__button button button--sm">Оставить заявку</button>
 
 
-                    <button type="button" className="header__burger-menu burger-menu" onClick={changeStateMenu}>
+                    <button type="button" className="header__burger-menu burger-menu" onClick={openMenu}>
                         {/*<img src="/img/icons/burger-menu.svg" alt=""/>*/}
                         <svg clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2"
                              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
