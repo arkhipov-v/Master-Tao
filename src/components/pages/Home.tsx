@@ -1,4 +1,3 @@
-import Header from "../Header";
 import Hero from "../Hero";
 import Delivery from "../Delivery";
 import Benefits from "../Benefits";
@@ -10,7 +9,6 @@ import Partnership from "../Partnership";
 
 function Home () {
     return(
-
         <main>
             <Hero />
             <Delivery />
@@ -23,4 +21,5 @@ function Home () {
         </main>
     )
 }
+
 export default Home;
