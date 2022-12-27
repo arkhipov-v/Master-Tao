@@ -3,3 +3,10 @@ export interface IBenefit {
     icon: string,
     id: string,
 }
+
+export interface IHeadline {
+    title: string
+    description?: string
+    line?: boolean
+    lineOrange?: boolean
+}

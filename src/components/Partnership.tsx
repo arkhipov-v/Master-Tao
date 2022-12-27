@@ -1,13 +1,18 @@
+import Headline from "./Headline";
 import CardAbout from "./CardAbout";
 
 function Partnership() {
     return (
         <section className="partnership">
             <div className="wrapper">
-                <div className="headline headline--line">
-                    <h2 className="headline__title h2">Готовы к сотрудничеству?</h2>
-                    <p className="headline__descr">Зарегистрируйте груз!</p>
-                </div>
+
+                <Headline
+                    title="Готовы к сотрудничеству?"
+                    description="Зарегистрируйте груз!"
+                    line={true}
+                    lineOrange={true}
+                />
+
                 <div className="partnership__inner">
                     <CardAbout />
                 </div>

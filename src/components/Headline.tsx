@@ -1,17 +1,16 @@
-/* TODO LIST
-1. Line yellow and green
-2. Without Description text
-3. Line to the right of the title
-4. Title align left
+import {IHeadline} from "../models/models";
 
- */
-
-function Headline () {
+function Headline ({...headline}: IHeadline) {
     return (
         <div className="wrapper">
-            <div className="headline headline--line">
-                <h2 className="headline__title h2">Готовы к сотрудничеству?</h2>
-                <p className="headline__descr">Зарегистрируйте груз!</p>
+            {/* Add class false*/}
+            {/*<div className={`headline ${headline.line && 'headline--line'}`}>*/}
+            <div className={`headline 
+                ${headline.line ? 'headline--line' : ''}
+                ${headline.lineOrange ? 'headline--line-orange' : ''}`}
+            >
+                <h2 className="headline__title h2">{headline.title}</h2>
+                <p className="headline__descr">{headline.description}</p>
             </div>
         </div>
     )
