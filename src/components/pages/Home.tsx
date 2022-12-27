@@ -10,29 +10,17 @@ import Partnership from "../Partnership";
 
 function Home () {
     return(
-        <>
-            <main>
-                <Hero />
-                <Delivery />
-                <Benefits />
-                <Goods />
-                <Services />
-                <About />
-                <Questions />
-                <Partnership />
-            </main>
 
-            {/* In new page for UI components */}
-            {/*<Input />*/}
-            {/*<CheckboxItem />*/}
-            {/*<Headline />*/}
-            {/*<CardDelivery />*/}
-            {/*<CardServices />*/}
-            {/*<CardBenefit />*/}
-            {/*<CardAbout />*/}
-            {/*<DeliveryForm />*/}
-            {/*<ContactForm />*/}
-        </>
+        <main>
+            <Hero />
+            <Delivery />
+            <Benefits />
+            <Goods />
+            <Services />
+            <About />
+            <Questions />
+            <Partnership />
+        </main>
     )
 }
 export default Home;
