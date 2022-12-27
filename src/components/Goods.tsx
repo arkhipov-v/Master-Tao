@@ -20,7 +20,7 @@ function Goods() {
                         modules={[Navigation]}
                         slidesPerView={"auto"}
                         spaceBetween={20}
-                        className="mySwiper">
+                        className="goods-slider">
                         <SwiperSlide>
                             <CardDelivery/>
                         </SwiperSlide>
