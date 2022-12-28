@@ -1,4 +1,4 @@
-import Button from "./Button";
+// import Button from "./Button";
 
 function Hero () {
     return (
@@ -12,6 +12,7 @@ function Hero () {
                             Рассчитать стоимость
                             <span className="button__icon"><img src="/img/icons/arrow-circle-left.svg" alt=""/></span>
                         </button>
+                        {/*<Button variant={'empty'} text={'Рассчитать стоимость'} onClick={()=>{}}/>*/}
                     </div>
                 </div>
             </div>

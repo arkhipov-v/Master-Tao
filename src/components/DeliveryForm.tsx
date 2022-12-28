@@ -1,10 +1,55 @@
+import {useState} from "react";
+
 function DeliveryForm () {
+    // const [inputValue,setInputValue] = useState('')
+    const [value,setValue] = useState({
+        name:'',
+        lastName:'',
+        age:undefined,
+        checked:false,
+        male:'female',
+    })
+
+    const onChange = (e:any) => {
+        console.log('e',e)
+        setValue(prev => ({...prev, [e.target.name] :e.target.value}))
+    }
+
+    const submitHandler = (e:any) => {
+        e.preventDefault()
+        console.log('value',value)
+    }
+
     return(
-        <form action="" className="delivery-form">
+        <form onSubmit={submitHandler} className="delivery-form">
             <div className="delivery-form__inner">
                 <div className="input-item">
                     <label htmlFor="input-11" className="input-item__label">Вывести нужный заголовок:</label>
-                    <input type="text" placeholder="Категория товара" className="input-item__input" id="input-11"/>
+                    {/*<input*/}
+                    {/*    type="text"*/}
+                    {/*    placeholder="Категория товара"*/}
+                    {/*    className="input-item__input" id="input-11"*/}
+                    {/*    value={inputValue}*/}
+                    {/*    onChange={e => setInputValue(e.target.value)}*/}
+                    {/*/>*/}
+
+                    <input
+                        type="text"
+                        placeholder="Категория товара"
+                        className="input-item__input" id="input-11"
+                        name='name'
+                        value={value.name}
+                        onChange={onChange}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Категория товара"
+                        className="input-item__input" id="input-11"
+                        name='lastName'
+                        value={value.lastName}
+                        onChange={onChange}
+                    />
+
                 </div>
 
                 <div className="input-item">
@@ -40,7 +85,8 @@ function DeliveryForm () {
                     <input type="text" placeholder="Категория товара" className="input-item__input" id="input-5"/>
                 </div>
 
-                <button className="button">
+                {/*<button className="button" type={'submit'}>*/}
+                <button className="button" onClick={submitHandler}>
                     Рассчитать
                     <span className="button__icon"><img src="/img/icons/arrow-circle-left.svg" alt=""/></span>
                 </button>

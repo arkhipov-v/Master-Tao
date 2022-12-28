@@ -5,8 +5,8 @@ interface TopMenuProps{
     show: boolean
 }
 
-function TopMenu({closeHandler, show
-}:TopMenuProps) {
+function TopMenu({closeHandler, show}:TopMenuProps) {
+
     return (
         <div className={`top-menu ${show ? "top-menu--open" : ""}`}>
             <div className="top-menu__overlay">

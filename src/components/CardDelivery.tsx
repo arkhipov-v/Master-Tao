@@ -1,11 +1,16 @@
-function Carddelivery() {
+
+interface CardDeliveryProps{
+    text?:string
+}
+
+function CardDelivery({text}:CardDeliveryProps) {
     return (
         <div className="card-delivery">
             <div className="card-delivery__banner">
                 <img src="/img/card-delivery-1.jpg" alt="Авто доставка"/>
             </div>
             <div className="card-delivery__body">
-                <div className="card-delivery__title">Авто - обычная</div>
+                <div className="card-delivery__title">Авто - обычная: {text}</div>
 
                 <div className="card-delivery__details delivery-details">
                     <div className="delivery-details__item">
@@ -33,4 +38,4 @@ function Carddelivery() {
     )
 }
 
-export default Carddelivery;
+export default CardDelivery;

@@ -1,4 +1,4 @@
-function Button () {
+function Button ({ text, variant,disabled, onClick, icon}:ButtonProps) {
     return (
         <button>Test</button>
         // <button type="button" className="button">
@@ -7,6 +7,18 @@ function Button () {
         // </button>
     );
 }
+
+interface ButtonProps{
+    text:string
+    onClick:() => void
+    disabled?:boolean
+    variant?: ButtonTypes
+    // variant: 'empty' | 'small'
+    icon?: string
+}
+type ButtonTypes = 'empty' | 'small'
+// {icon && <span></span>}
+
 
 /*
 <button className="button" disabled>Show more</button>
