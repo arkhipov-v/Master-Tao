@@ -1,5 +1,5 @@
 import {useState} from "react";
-import TopMenu from "./TopMenu"
+import TopMenu from "../ui/TopMenu"
 
 // import Button from "./Button";
 
@@ -26,7 +26,7 @@ function Header() {
             <div className="wrapper">
                 <div className="header__inner">
 
-                    <a href="/" className="header__logo">
+                    <a href="/src/components/pages" className="header__logo">
                         <picture>
                             <source media="(min-width: 480px)" srcSet="/img/logo.svg"/>
                             <img src="/img/logo-sm.svg" alt="Cargo logo"/>

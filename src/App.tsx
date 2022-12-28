@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import Home from './components/pages/Home';
 import Contacts from "./components/pages/Contacts";
-import Header from "./components/Header";
+import Header from "./components/layout/Header";
 import UI from "./components/pages/UI";
 
 function App() {

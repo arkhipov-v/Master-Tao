@@ -1,4 +1,4 @@
-import {IBenefit} from "../models/models";
+import {IBenefit} from "../../models/models";
 
 function CardBenefit ({icon,title}: IBenefit) {
     return (

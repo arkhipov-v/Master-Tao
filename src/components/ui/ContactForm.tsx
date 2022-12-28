@@ -1,6 +1,6 @@
 function ContactForm() {
     return (
-        <form action="" className="contact-form">
+        <form action="src/components/ui/ContactForm" className="contact-form">
             <div className="contact-form__inner">
                 <div className="contact-form__header">
                     <div className="contact-form__title">Остались вопросы?</div>

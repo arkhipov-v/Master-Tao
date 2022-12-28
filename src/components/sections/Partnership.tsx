@@ -1,5 +1,5 @@
-import Headline from "./Headline";
-import CardAbout from "./CardAbout";
+import Headline from "../ui/Headline";
+import CardAbout from "../ui/CardAbout";
 
 function Partnership() {
     return (

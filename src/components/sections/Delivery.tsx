@@ -1,4 +1,4 @@
-import DeliveryForm from "./DeliveryForm";
+import DeliveryForm from "../ui/DeliveryForm";
 
 function Delivery() {
     return (

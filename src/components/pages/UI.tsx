@@ -1,12 +1,12 @@
-import Input from "../Input";
-import CheckboxItem from "../CheckboxItem";
-import Headline from "../Headline";
-import CardDelivery from "../CardDelivery";
-import CardBenefit from "../CardBenefit";
-import CardServices from "../CardServices";
-import CardAbout from "../CardAbout";
-import ContactForm from "../ContactForm";
-import DeliveryForm from "../DeliveryForm";
+import Input from "../ui/Input";
+import CheckboxItem from "../ui/CheckboxItem";
+import Headline from "../ui/Headline";
+import CardDelivery from "../ui/CardDelivery";
+import CardBenefit from "../ui/CardBenefit";
+import CardServices from "../ui/CardServices";
+import CardAbout from "../ui/CardAbout";
+import ContactForm from "../ui/ContactForm";
+import DeliveryForm from "../ui/DeliveryForm";
 
 function UI() {
     return (

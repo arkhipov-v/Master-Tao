@@ -1,4 +1,4 @@
-import CardDelivery from "./CardDelivery";
+import CardDelivery from "../ui/CardDelivery";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";

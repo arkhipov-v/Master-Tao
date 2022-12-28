@@ -1,11 +1,11 @@
-import Hero from "../Hero";
-import Delivery from "../Delivery";
-import Benefits from "../Benefits";
-import Goods from "../Goods";
-import Services from "../Services";
-import About from "../About";
-import Questions from "../Questions";
-import Partnership from "../Partnership";
+import Hero from "../sections/Hero";
+import Delivery from "../sections/Delivery";
+import Benefits from "../sections/Benefits";
+import Goods from "../sections/Goods";
+import Services from "../sections/Services";
+import About from "../sections/About";
+import Questions from "../sections/Questions";
+import Partnership from "../sections/Partnership";
 
 function Home () {
     return(

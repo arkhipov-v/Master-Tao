@@ -1,4 +1,4 @@
-import {IHeadline} from "../models/models";
+import {IHeadline} from "../../models/models";
 // import classnames from 'classnames'
 // import cn from 'classnames'
 

@@ -1,4 +1,4 @@
-import CardServices from "./CardServices";
+import CardServices from "../ui/CardServices";
 
 function Services() {
     return (

@@ -1,5 +1,5 @@
-import CardBenefit from "./CardBenefit";
-import {benefits} from "../data/benefits"
+import CardBenefit from "../ui/CardBenefit";
+import {benefits} from "../../data/benefits"
 
 function Benefits () {
     return (
