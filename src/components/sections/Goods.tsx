@@ -10,8 +10,7 @@ const GoodsList = [
     {id:4,text:'4'},
 ]
 
-
-function Goods() {
+const Goods = () => {
     return (
         <section className="goods">
             <div className="wrapper">

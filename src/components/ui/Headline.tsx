@@ -2,8 +2,7 @@ import {IHeadline} from "../../models/models";
 // import classnames from 'classnames'
 // import cn from 'classnames'
 
-
-function Headline ({...headline}: IHeadline) {
+const Headline = ({...headline}: IHeadline) => {
     return (
         <div className="wrapper">
             {/* Add class false*/}

@@ -8,7 +8,7 @@ import CardAbout from "../ui/CardAbout";
 import ContactForm from "../ui/ContactForm";
 import DeliveryForm from "../ui/DeliveryForm";
 
-function UI() {
+const UI = () => {
     return (
         <main>
             <Input />

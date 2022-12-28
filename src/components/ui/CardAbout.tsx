@@ -12,9 +12,8 @@ const AboutList = [
     },
 ]
 
-function CardAbout() {
+const CardAbout = () => {
     return (
-        <div className="wrapper">
             <div className="card-about">
                 <div className="card-about__inner">
                     <div className="card-about__banner">
@@ -39,7 +38,6 @@ function CardAbout() {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 

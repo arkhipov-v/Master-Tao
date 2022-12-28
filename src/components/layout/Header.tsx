@@ -1,25 +1,14 @@
 import {useState} from "react";
 import TopMenu from "../ui/TopMenu"
 
-// import Button from "./Button";
-
-
-function Header() {
+const Header = () => {
 
     let [stateMenu, setStateMenu] = useState(false)
     console.log('Header render')
 
-    const toggleMenu = () => {
-        setStateMenu(prev => !prev)
-    }
-
-    const openMenu = () => {
-        setStateMenu(true)
-    }
-
-    const closeMenu = () => {
-        setStateMenu(false)
-    }
+    const openMenu = () => setStateMenu(true)
+    const closeMenu = () => setStateMenu(false)
+    const toggleMenu = () => setStateMenu(prev => !prev)
 
     return (
         <header className="header">
@@ -42,7 +31,6 @@ function Header() {
 
 
                     <button type="button" className="header__burger-menu burger-menu" onClick={openMenu}>
-                        {/*<img src="/img/icons/burger-menu.svg" alt=""/>*/}
                         <svg clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2"
                              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path

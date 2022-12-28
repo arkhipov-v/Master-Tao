@@ -1,6 +1,6 @@
 import DeliveryForm from "../ui/DeliveryForm";
 
-function Delivery() {
+const Delivery = () => {
     return (
         <section className="delivery">
             <div className="wrapper">
@@ -15,7 +15,6 @@ function Delivery() {
                         <img src="/img/delivery-banner.png" alt="Delivery"/>
                     </div>
                 </div>
-
             </div>
         </section>
     )

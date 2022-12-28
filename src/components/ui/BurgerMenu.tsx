@@ -1,4 +1,4 @@
-function BurgerMenu () {
+const BurgerMenu = () => {
     return (
         <>
             {/* Open Burger Menu*/}

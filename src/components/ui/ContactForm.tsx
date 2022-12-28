@@ -1,4 +1,4 @@
-function ContactForm() {
+const ContactForm = () => {
     return (
         <form action="src/components/ui/ContactForm" className="contact-form">
             <div className="contact-form__inner">

@@ -3,7 +3,7 @@ interface CardDeliveryProps{
     text?:string
 }
 
-function CardDelivery({text}:CardDeliveryProps) {
+const CardDelivery = ({text}:CardDeliveryProps) => {
     return (
         <div className="card-delivery">
             <div className="card-delivery__banner">

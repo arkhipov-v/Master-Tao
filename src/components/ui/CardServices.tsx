@@ -1,4 +1,4 @@
-function CardServices() {
+const CardServices = () => {
     return (
         <div className="wrapper">
             <div className="card-services">

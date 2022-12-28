@@ -44,7 +44,7 @@ export const benefits:IBenefit[] = [
     },
 ]
 
-function Benefits () {
+const Benefits = () => {
     return (
         <section className="benefits">
             <div className="wrapper">

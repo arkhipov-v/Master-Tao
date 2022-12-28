@@ -5,7 +5,7 @@ interface TopMenuProps{
     show: boolean
 }
 
-function TopMenu({closeHandler, show}:TopMenuProps) {
+const TopMenu = ({closeHandler, show}:TopMenuProps) => {
 
     return (
         <div className={`top-menu ${show ? "top-menu--open" : ""}`}>

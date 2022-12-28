@@ -1,6 +1,6 @@
 import CardServices from "../ui/CardServices";
 
-function Services() {
+const Services = () => {
     return (
         <section className="services">
             <div className="wrapper">

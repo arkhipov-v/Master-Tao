@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-function DeliveryForm () {
+const DeliveryForm = () => {
     // const [inputValue,setInputValue] = useState('')
     const [value,setValue] = useState({
         name:'',
@@ -85,7 +85,6 @@ function DeliveryForm () {
                     <input type="text" placeholder="Категория товара" className="input-item__input" id="input-5"/>
                 </div>
 
-                {/*<button className="button" type={'submit'}>*/}
                 <button className="button" onClick={submitHandler}>
                     Рассчитать
                     <span className="button__icon"><img src="/img/icons/arrow-circle-left.svg" alt=""/></span>

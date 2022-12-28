@@ -1,6 +1,6 @@
 // import Button from "./Button";
 
-function Hero () {
+const Hero = () => {
     return (
         <section className="hero">
             <div className="hero__inner">
@@ -12,7 +12,6 @@ function Hero () {
                             Рассчитать стоимость
                             <span className="button__icon"><img src="/img/icons/arrow-circle-left.svg" alt=""/></span>
                         </button>
-                        {/*<Button variant={'empty'} text={'Рассчитать стоимость'} onClick={()=>{}}/>*/}
                     </div>
                 </div>
             </div>

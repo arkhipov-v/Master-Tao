@@ -1,4 +1,4 @@
-function Button ({ text, variant,disabled, onClick, icon}:ButtonProps) {
+const Button = ({ text, variant,disabled, onClick, icon}:ButtonProps) => {
     return (
         <button>Test</button>
         // <button type="button" className="button">
@@ -51,10 +51,3 @@ type ButtonTypes = 'empty' | 'small'
 */
 
 export default Button;
-
-/* TODO
-- Button
-- Button sm
-- Button text with icon
-- Button icon
- */

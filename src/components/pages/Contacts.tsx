@@ -1,4 +1,4 @@
-function Contacts() {
+const Contacts = () => {
     return (
         <h2>Страница Контактов</h2>
     )

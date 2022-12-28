@@ -8,7 +8,7 @@ import Contacts from "./components/pages/Contacts";
 import Header from "./components/layout/Header";
 import UI from "./components/pages/UI";
 
-function App() {
+const App = () => {
     return (
         <Router>
             <Header/>

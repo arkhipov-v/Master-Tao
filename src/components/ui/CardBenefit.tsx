@@ -1,6 +1,6 @@
 import {IBenefit} from "../../models/models";
 
-function CardBenefit ({icon,title}: IBenefit) {
+const CardBenefit = ({icon,title}: IBenefit) => {
     return (
         <div className="card-benefit">
             <div className="card-benefit__icon">

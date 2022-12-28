@@ -7,7 +7,7 @@ import About from "../sections/About";
 import Questions from "../sections/Questions";
 import Partnership from "../sections/Partnership";
 
-function Home () {
+const Home = () => {
     return(
         <main>
             <Hero />

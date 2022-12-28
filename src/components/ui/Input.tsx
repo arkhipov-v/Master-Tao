@@ -7,7 +7,7 @@
 5. Select
 */
 
-function Input () {
+const Input = () => {
     return (
         <div className="wrapper">
             <div className="input-item">

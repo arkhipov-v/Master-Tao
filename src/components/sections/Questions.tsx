@@ -1,6 +1,6 @@
 import ContactForm from "../ui/ContactForm";
 
-function Questions () {
+const Questions = () => {
     return (
         <section className="questions">
             <div className="wrapper">
@@ -8,7 +8,7 @@ function Questions () {
                     <h2 className="headline__title h2">Часто задаваемые вопросы</h2>
                 </div>
                 <div className="questions__inner">
-                {/*    Accordion */}
+                {/* Accordion */}
                     <ContactForm />
                 </div>
             </div>
