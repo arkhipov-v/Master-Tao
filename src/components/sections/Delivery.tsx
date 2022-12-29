@@ -7,10 +7,12 @@ const Delivery = () => {
             <div className="wrapper">
                 <div className="delivery__inner">
                     <div className="delivery__info">
-                        {/*<div className="delivery__headline headline headline--line headline--left">*/}
-                        {/*    <h2 className="headline__title h2">Рассчет стоимости <br/> доставки вашего груза</h2>*/}
-                        {/*</div>*/}
-                        <Headline title="Рассчет стоимости <br/> доставки вашего груза" line={true} lineLeft={true}  />
+                        <Headline
+                            title={<>Рассчет стоимости <br/> доставки вашего груза</>}
+                            line={true}
+                            lineLeft={true}
+                            className="delivery__headline"
+                        />
                         <DeliveryForm />
                     </div>
                     <div className="delivery__banner">
