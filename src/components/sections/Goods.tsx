@@ -2,6 +2,7 @@ import CardDelivery from "../ui/CardDelivery";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
+import Headline from "../ui/Headline";
 
 const GoodsList = [
     {id:1,text:'1'},
@@ -14,9 +15,7 @@ const Goods = () => {
     return (
         <section className="goods">
             <div className="wrapper">
-                <div className="headline headline--line">
-                    <h2 className="headline__title h2">Варианты доставки грузов из Китая</h2>
-                </div>
+                <Headline title="Варианты доставки грузов из Китая" line={true} />
                 <div className="goods__inner">
                     <Swiper
                         navigation={true}

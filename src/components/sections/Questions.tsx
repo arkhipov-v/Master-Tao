@@ -1,12 +1,11 @@
 import ContactForm from "../ui/ContactForm";
+import Headline from "../ui/Headline";
 
 const Questions = () => {
     return (
         <section className="questions">
             <div className="wrapper">
-                <div className="headline headline--line headline--line-orange">
-                    <h2 className="headline__title h2">Часто задаваемые вопросы</h2>
-                </div>
+                <Headline title="Часто задаваемые вопросы" line={true} lineOrange={true}/>
                 <div className="questions__inner">
                 {/* Accordion */}
                     <ContactForm />
