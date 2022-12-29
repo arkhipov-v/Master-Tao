@@ -1,7 +1,7 @@
 import CardBenefit from "../ui/CardBenefit";
 import {IBenefit} from "../../models/models";
 
-export const benefits:IBenefit[] = [
+const benefits:IBenefit[] = [
     {
         "title": `Таможенное оформление груза`,
         "icon": "surface",

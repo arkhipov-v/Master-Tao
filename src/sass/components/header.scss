@@ -39,6 +39,12 @@
     }
   }
 
+  &__top-menu {
+    @include media-min(992px) {
+      margin-inline: auto 50px;
+    }
+  }
+
   &__button {
     @include media-max(992px) {
       display: none;

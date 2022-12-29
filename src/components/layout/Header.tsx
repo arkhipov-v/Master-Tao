@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { Link } from "react-router-dom";
 import TopMenu from "../ui/TopMenu"
 
 const Header = () => {
@@ -15,20 +16,20 @@ const Header = () => {
             <div className="wrapper">
                 <div className="header__inner">
 
-                    <a href="/src/components/pages" className="header__logo">
+                    <Link to="/">
                         <picture>
                             <source media="(min-width: 480px)" srcSet="/img/logo.svg"/>
                             <img src="/img/logo-sm.svg" alt="Cargo logo"/>
                         </picture>
-                    </a>
+                    </Link>
 
                     <TopMenu
+                        className={'header__top-menu'}
                         show={stateMenu}
                         closeHandler={closeMenu}
                     />
 
                     <button className="header__button button button--sm">Оставить заявку</button>
-
 
                     <button type="button" className="header__burger-menu burger-menu" onClick={openMenu}>
                         <svg clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2"

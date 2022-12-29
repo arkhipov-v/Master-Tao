@@ -1,14 +1,15 @@
 import TopNav from "./TopNav";
 
 interface TopMenuProps{
+    className?:string
     closeHandler: () => void
     show: boolean
 }
 
-const TopMenu = ({closeHandler, show}:TopMenuProps) => {
+const TopMenu = ({closeHandler, show,className}:TopMenuProps) => {
 
     return (
-        <div className={`top-menu ${show ? "top-menu--open" : ""}`}>
+        <div className={`top-menu ${show ? "top-menu--open" : ""} ${className}`}>
             <div className="top-menu__overlay">
                 <div className="top-menu__inner">
                     <div className="top-menu__nav">
