@@ -9,6 +9,7 @@ import Contacts from "./components/pages/Contacts";
 import Header from "./components/layout/Header";
 import UI from "./components/pages/UI";
 import Services from "./components/pages/Services";
+import "normalize.css";
 
 const App = () => {
     return (
