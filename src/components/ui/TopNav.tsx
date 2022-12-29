@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const topNavData = [
     {
@@ -25,9 +25,9 @@ const TopNav =  () => {
     return (
         <nav className="top-nav">
             {topNavData.map(item => (
-                <Link
+                <NavLink
                     key={item.id}
-                    className="top-nav__link"
+                    className={({ isActive}) => (isActive ? 'top-nav__link top-nav__link--active' : 'top-nav__link')}
                     to={item.link}
                     onClick={e => {
                         item.disabled && e.preventDefault()
@@ -35,7 +35,7 @@ const TopNav =  () => {
                     }
                 >
                     {item.text}
-                </Link>
+                </NavLink>
             ))}
 
         </nav>

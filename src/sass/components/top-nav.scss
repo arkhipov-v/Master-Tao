@@ -27,11 +27,20 @@
       }
     }
 
-      @media (any-hover) {
-        &:hover {
-          text-decoration: underline;
+    &--active {
+      color: var(--color-primary-1);
+      &:hover {
+        text-decoration: none;
+        cursor: default;
       }
     }
+
+    // TODO Придумать красывый ховер для ссылок
+    //@media (any-hover) {
+    //  &:hover:not(.top-nav__link--active) {
+    //    text-decoration: underline;
+    //  }
+    //}
 
     @include media-max(992px) {
       font-size: 20px;
