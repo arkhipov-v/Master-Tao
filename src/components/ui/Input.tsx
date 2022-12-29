@@ -1,19 +1,20 @@
 interface IInput {
+    type: string
     title?: string
     placeholder: string
     required?: boolean
     disabled?: boolean
-    id: string
+    id?: string
 }
 
-const Input = ({title, placeholder, id, required, disabled}: IInput) => {
+const Input = ({type, title, placeholder, id, required, disabled}: IInput) => {
     return (
         <div className="input-item">
             {title &&
                 <label htmlFor={id} className="input-item__label">{title}</label>
             }
             <input
-                type="text"
+                type={type}
                 placeholder={placeholder}
                 id={id}
                 className="input-item__input"

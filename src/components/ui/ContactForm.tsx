@@ -1,3 +1,27 @@
+import Input from "./Input";
+import Textarea from "./Textarea";
+
+const ContactFormData = [
+    {
+        type: 'text',
+        placeholder: 'Имя *',
+        required: true,
+        key: 1,
+    },
+    {
+        type: 'tel',
+        placeholder: 'Телефон *',
+        required: true,
+        key: 2,
+    },
+    {
+        type: 'email',
+        placeholder: 'E-mail',
+        required: false,
+        key: 3,
+    }
+]
+
 const ContactForm = () => {
     return (
         <form action="src/components/ui/ContactForm" className="contact-form">
@@ -8,16 +32,16 @@ const ContactForm = () => {
                 </div>
 
                 <div className="contact-form__body">
-                    <div className="input-item"><input type="text" placeholder="Категория товара" className="input-item__input"/>
-                    </div>
-                    <div className="input-item">
-                        <input type="text" placeholder="Категория товара" className="input-item__input"/>
-                    </div>
-                    <div className="input-item">
-                        <input type="text" placeholder="Категория товара" className="input-item__input"/>
-                    </div>
+                    {ContactFormData.map(input => (
+                        <Input
+                            type={input.type}
+                            placeholder={input.placeholder}
+                            required={input.required}
+                            key={input.key}
+                        />
+                    ))}
 
-                    <textarea placeholder="Ваш вопрос" className="textarea"></textarea>
+                    <Textarea placeholder="Ваш вопрос"></Textarea>
 
                     <button className="button">
                         Отправить запрос
