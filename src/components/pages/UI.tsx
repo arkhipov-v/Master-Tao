@@ -10,8 +10,8 @@ import DeliveryForm from "../ui/DeliveryForm";
 
 const UI = () => {
     return (
-        <main>
-            <Input />
+        <main className="wrapper">
+            <Input title="Title for input" id="inp-1" placeholder="Text here"/>
             <CheckboxItem />
             <Headline title="Test Headline" />
             <CardDelivery />
