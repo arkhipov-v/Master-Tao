@@ -1,22 +1,40 @@
-const Button = ({ text, variant,disabled, onClick, icon}:ButtonProps) => {
+import classnames from 'classnames'
+import cn from 'classnames'
+
+const Button = ({ text, isEmpty, isSmall, isCircle, isDisabled, onClick, isIcon, className}:ButtonProps) => {
     return (
-        <button>Test</button>
-        // <button type="button" className="button">
-        //     {props?.name}
-        //     {props?.icon && <img src={props.icon} alt=""/>}
-        // </button>
+        <button
+            // className={`button ${className}`}
+            className={cn(
+                'button',
+                className,
+                isSmall && 'button--sm',
+                isEmpty && 'button--empty',
+                isCircle && 'button--circle'
+            )}
+            disabled={isDisabled}
+            onClick={onClick}
+        >
+            {text}
+            {isIcon &&
+                <span className="button__icon"><img src={`/img/icons/arrow-circle-left.svg`} alt="arrow left"/></span>
+            }
+        </button>
     );
 }
 
 interface ButtonProps{
-    text:string
-    onClick:() => void
-    disabled?:boolean
-    variant?: ButtonTypes
-    // variant: 'empty' | 'small'
-    icon?: string
+    text?:string
+    onClick?:() => void
+    isDisabled?:boolean
+    isSmall?: boolean
+    isEmpty?: boolean
+    isCircle?: boolean
+    isIcon?: boolean
+    className?: string
+    // variant?: ButtonTypes
 }
-type ButtonTypes = 'empty' | 'small'
+// type ButtonTypes = 'empty' | 'small'
 // {icon && <span></span>}
 
 
