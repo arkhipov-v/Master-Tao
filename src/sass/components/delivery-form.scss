@@ -1,9 +1,6 @@
 .delivery-form {
 
   &__inner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px 30px;
     padding: 40px 50px 70px;
     border-radius: 20px;
     background-color: var(--bg-dark);
@@ -12,6 +9,19 @@
     @include media-max(600px) {
       grid-template-columns: 1fr;
       padding: 40px 30px 35px;
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    gap: 20px 30px;
+    margin-bottom: 40px;
+
+    @include media-max(600px) {
+      grid-template-columns: 1fr;
+      margin-bottom: 26px;
     }
   }
 }
