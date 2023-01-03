@@ -35,7 +35,7 @@ const UI = () => {
             <Input type="text" title="Title for input" id="inp-1" placeholder="Text here"/>
             <CheckboxItem title="Title for checkbox" checked={true}/>
             <Headline title="Test Headline" />
-            <CardDelivery />
+            <CardDelivery title="Авто - обычная" img="card-delivery-1" deliveryDays="9 - 15" weight="от 5 кг" price="2,5" />
             <CardBenefit title='Test 1' icon='test' id='1' />
             <CardServices />
             <CardAbout />
