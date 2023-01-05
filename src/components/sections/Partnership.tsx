@@ -1,22 +1,48 @@
-import Headline from "../ui/Headline";
-import CardAbout from "../ui/CardAbout";
+import Headline from "../ui/Headline"
+import CardAbout from "../ui/CardAbout"
+
+const aboutList = [
+	{
+		id: 1,
+		text: [
+			"Для того, чтобы начать сотрудничество, необходимо оформить груз указав информацию о содержимом груза, его стоимость и количество. А так-же прикрепив фотографии к заявке.",
+			'Если требуется проверка товара на соответсвие количеству, то при оформлении груза на нашем сайте укажите это в графе "Примечание". Данная услуга платная и составляет 3 юаня за одну позицию в заказе. Любые дополнительные проверки груза обсуждаются индивидуально в том числе и их стоимость.',
+			"До отправки груза на наш склад в Китае обязательно позаботьтесь о том, чтобы сделать маркировку, с номером Вашего заказа у нас на сайте, для каждой внешней коробки, чтобы мы смогли определить именно Ваш груз. Если у Вас нет возможности сделать это самостоятельно, то попросите об этом своего поставщика.",
+		],
+		image: "card-about-1",
+		button: false,
+		reverse: false,
+	},
+	{
+		id: 2,
+		text: [
+			"После отправки груза на наш склад в Китае, Вам обязательно нужно указать трек-номер для отслеживания посылок по Китаю для каждой позиции в заказе. Внести трек-номер можно на странице заказа. Трек-номер - это ещё одна мера для идентификации Вашего груза на нашем складе.",
+			'Если Вы оформили груз по нашей инструкции и сделали все правильно, то при получении Вашего груза на складе в Китае статус заказа изменится на "На складе".',
+		],
+		image: "card-about-2",
+		button: true,
+		reverse: true,
+	},
+]
 
 const Partnership = () => {
-    return (
-        <section className="partnership">
-            <div className="wrapper">
-                <Headline
-                    title="Готовы к сотрудничеству?"
-                    description="Зарегистрируйте груз!"
-                    line={true}
-                    lineOrange={true}
-                />
-                <div className="partnership__inner">
-                    <CardAbout />
-                </div>
-            </div>
-        </section>
-    )
+	return (
+		<section className="partnership">
+			<div className="wrapper">
+				<Headline
+					title="Готовы к сотрудничеству?"
+					description="Зарегистрируйте груз!"
+					line={true}
+					lineOrange={true}
+				/>
+				<div className="partnership__inner">
+					{aboutList.map((item) => (
+						<CardAbout {...item} key={item.id} />
+					))}
+				</div>
+			</div>
+		</section>
+	)
 }
 
-export default Partnership;
+export default Partnership
