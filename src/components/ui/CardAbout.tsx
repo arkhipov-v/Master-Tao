@@ -3,8 +3,6 @@ import Button from "./Button"
 
 interface CardAboutProps {
 	id: number
-	// text: array???
-	// string[] || Array<string>
 	text: string[]
 	image: string
 	button: boolean

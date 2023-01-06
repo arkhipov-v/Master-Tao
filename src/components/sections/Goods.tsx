@@ -7,49 +7,41 @@ import Headline from "../ui/Headline"
 const goodsList = [
 	{
 		title: "Авто - обычная",
-		img: "",
+		img: "card-delivery-1",
 		deliveryDays: "9-15",
-		wight: "от 5 кг",
+		weight: "от 5 кг",
 		price: "2,5",
 		id: 1,
 	},
 	{
 		title: "Авто - ускоренная",
-		img: "",
+		img: "card-delivery-2",
 		deliveryDays: "7-12",
-		wight: "от 5 кг",
+		weight: "от 5 кг",
 		price: "3,5",
 		id: 2,
 	},
 	{
-		title: "Авто - ценный груз",
-		img: "",
-		deliveryDays: "9-15",
-		wight: "от 5 кг",
-		price: "5",
-		id: 3,
-	},
-	{
 		title: "Авиа",
-		img: "",
+		img: "card-delivery-3",
 		deliveryDays: "3-6",
-		wight: "от 8 кг",
+		weight: "от 8 кг",
 		price: "6,5",
 		id: 4,
 	},
 	{
 		title: "Ж/д",
-		img: "",
+		img: "card-delivery-4",
 		deliveryDays: "16-20",
-		wight: "от 15 кг",
+		weight: "от 15 кг",
 		price: "4,5",
 		id: 5,
 	},
 	{
 		title: "Море",
-		img: "",
+		img: "card-delivery-5",
 		deliveryDays: "14-16",
-		wight: "от 12 кг",
+		weight: "от 12 кг",
 		price: "5,5",
 		id: 6,
 	},
@@ -68,18 +60,9 @@ const Goods = () => {
 						spaceBetween={20}
 						className="goods-slider"
 					>
-						{goodsList.map((el) => (
-							<SwiperSlide key={el.id}>
-								{/*{goodsList.map(item => (*/}
-								{/*    <CardDelivery*/}
-								{/*        title={item.title}*/}
-								{/*        img={item.img}*/}
-								{/*        deliveryDays={item.deliveryDays}*/}
-								{/*        weight={item.wight}*/}
-								{/*        price={item.price}*/}
-								{/*        key={item.id}*/}
-								{/*    />*/}
-								{/*))}*/}
+						{goodsList.map((item) => (
+							<SwiperSlide key={item.id}>
+								<CardDelivery {...item} />
 							</SwiperSlide>
 						))}
 					</Swiper>
