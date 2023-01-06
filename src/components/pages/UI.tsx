@@ -48,7 +48,12 @@ const UI = () => {
 				price="2,5"
 			/>
 			<CardBenefit title="Test 1" icon="test" id="1" />
-			<CardServices />
+			<CardServices
+				title="Best title"
+				text="Best description"
+				image="card-services-1"
+				isButton={true}
+			/>
 			{/* <CardAbout /> */}
 			<DeliveryForm />
 			<ContactForm />

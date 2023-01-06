@@ -1,7 +1,7 @@
-import {ReactNode} from "react";
+import { ReactNode } from "react"
 
 export interface IBenefit {
-    title: (() => ReactNode) | string,
-    icon: string,
-    id: string,
+	title: (() => ReactNode) | string
+	icon: string
+	id: string
 }

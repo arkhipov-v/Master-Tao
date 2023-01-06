@@ -1,7 +1,5 @@
 const Contacts = () => {
-    return (
-        <h2>Страница Контактов</h2>
-    )
+	return <h2>Страница Контактов</h2>
 }
 
-export default Contacts;
+export default Contacts
