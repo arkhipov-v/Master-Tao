@@ -3,6 +3,7 @@ import About from "./components/pages/About"
 import Home from "./components/pages/Home"
 import Contacts from "./components/pages/Contacts"
 import Header from "./components/layout/Header"
+import Footer from "./components/layout/Footer"
 import UI from "./components/pages/UI"
 import Services from "./components/pages/Services"
 import "normalize.css"
@@ -18,6 +19,7 @@ const App = () => {
 				<Route path="/Contacts" element={<Contacts />} />
 				<Route path="/UI" element={<UI />} />
 			</Routes>
+			<Footer />
 		</Router>
 	)
 }
