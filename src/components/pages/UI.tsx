@@ -4,7 +4,6 @@ import CheckboxItem from "../ui/CheckboxItem"
 import Headline from "../ui/Headline"
 import CardDelivery from "../ui/CardDelivery"
 import CardBenefit from "../ui/CardBenefit"
-import CardServices from "../ui/CardServices"
 import CardAbout from "../ui/CardAbout"
 import ContactForm from "../ui/ContactForm"
 import DeliveryForm from "../ui/DeliveryForm"
@@ -48,12 +47,6 @@ const UI = () => {
 				price="2,5"
 			/>
 			<CardBenefit title="Test 1" icon="test" id="1" />
-			<CardServices
-				title="Best title"
-				text="Best description"
-				image="card-services-1"
-				isButton={true}
-			/>
 			{/* <CardAbout /> */}
 			<DeliveryForm />
 			<ContactForm />
