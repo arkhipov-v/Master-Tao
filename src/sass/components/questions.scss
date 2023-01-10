@@ -1,11 +1,22 @@
 .questions {
-  padding-block: 100px;
+	padding-block: 100px;
 
-  @include media-max(768px) {
-    padding-block: 50px;
-  }
+	@include media-max(768px) {
+		padding-block: 50px;
+	}
 
-  &__inner {
-    margin-top: 50px;
-  }
+	&__inner {
+		margin-top: 50px;
+		@include media-min(992px) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__accordion {
+		@include media-min(992px) {
+			width: 100%;
+			max-width: 716px;
+		}
+	}
 }

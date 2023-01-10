@@ -1,3 +1,4 @@
+import Accordion from "../ui/Accordion"
 import ContactForm from "../ui/ContactForm"
 import Headline from "../ui/Headline"
 
@@ -11,7 +12,7 @@ const Questions = () => {
 					lineOrange={true}
 				/>
 				<div className="questions__inner">
-					{/* Accordion */}
+					<Accordion className="questions__accordion" />
 					<ContactForm />
 				</div>
 			</div>
