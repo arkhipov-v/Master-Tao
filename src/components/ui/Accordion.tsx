@@ -1,9 +1,8 @@
+import { useState } from "react"
+
 interface AccordionProps {
 	className?: string
 }
-
-// Пробрасывание класса как пропс
-// Вместо компонента с аккордеоном отделььные элементы
 
 const accordionData = [
 	{
@@ -39,12 +38,27 @@ const accordionData = [
 ]
 
 const Accordion = ({ className }: AccordionProps) => {
+	const [isActiveIndex, setIsActiveIndex] = useState<undefined | number>(
+		undefined
+	)
+
+	const toggle = (index: number) => {
+		setIsActiveIndex((prev) => {
+			return prev === index ? undefined : index
+		})
+	}
+
 	return (
 		<div className={`accordion ${className}`}>
-			{accordionData.map((item) => {
+			{accordionData.map((item, index) => {
 				return (
-					<div className="accordion__item" key={item.id}>
-						<div className="accordion__header">
+					<div
+						className={`accordion__item ${
+							isActiveIndex === index ? "accordion__item--active" : ""
+						}`}
+						key={item.id}
+					>
+						<div className="accordion__header" onClick={() => toggle(index)}>
 							<div className="accordion__title">{item.title}</div>
 							<div className="accordion__icon">
 								<img src="img/icons/arrow-circle-left.svg" alt="arrow" />
