@@ -1,8 +1,16 @@
+import Benefits from "../sections/Benefits"
+import Hero from "../sections/Hero"
+import Questions from "../sections/Questions"
+// import About from "../sections/About"
+
 const About = () => {
 	return (
-		<div className="wrapper">
-			<h1>About page</h1>
-		</div>
+		<main>
+			<Hero />
+			{/* <About /> */}
+			<Benefits />
+			<Questions />
+		</main>
 	)
 }
 

@@ -1,5 +1,13 @@
+import Hero from "../sections/Hero"
+import Questions from "../sections/Questions"
+
 const Contacts = () => {
-	return <h2>Страница Контактов</h2>
+	return (
+		<main>
+			<Hero />
+			<Questions />
+		</main>
+	)
 }
 
 export default Contacts
