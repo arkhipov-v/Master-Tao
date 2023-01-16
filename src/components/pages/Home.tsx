@@ -9,7 +9,20 @@ import Partnership from "../sections/Partnership"
 const Home = () => {
 	return (
 		<main>
-			<Hero />
+			<Hero
+				title={
+					<>
+						Прямое КАРГО <br /> из Китая
+					</>
+				}
+				descr={
+					<>
+						Доставляем любые грузы из Китая <br /> по честной цене
+					</>
+				}
+				bgUrl="url('img/hero-bg.jpg')"
+				isButton={true}
+			/>
 			<Delivery />
 			<Benefits />
 			<Goods />

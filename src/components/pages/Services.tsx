@@ -5,7 +5,17 @@ import Hero from "../sections/Hero"
 const Services = () => {
 	return (
 		<main>
-			<Hero />
+			<Hero
+				title="Услуги"
+				descr={
+					<>
+						Сборные грузы и цельные товарные партии, <br /> услуги посредника
+						ТаоБао
+					</>
+				}
+				bgUrl="url('img/service-bg.jpg')"
+				isSmall={true}
+			/>
 			<Goods />
 			<Delivery />
 		</main>

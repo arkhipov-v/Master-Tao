@@ -6,7 +6,17 @@ import Questions from "../sections/Questions"
 const About = () => {
 	return (
 		<main>
-			<Hero />
+			<Hero
+				title="О компании"
+				descr={
+					<>
+						Азия Карго - это полный комплекс логистических <br /> услуг по
+						доставке грузов из Китая.
+					</>
+				}
+				bgUrl="url('img/about-bg.jpg')"
+				isSmall={true}
+			/>
 			{/* <About /> */}
 			<Benefits />
 			<Questions />
