@@ -15,6 +15,7 @@ const Services = () => {
 				}
 				bgUrl="url('img/service-bg.jpg')"
 				isSmall={true}
+				isButton={true}
 			/>
 			<Goods />
 			<Delivery />

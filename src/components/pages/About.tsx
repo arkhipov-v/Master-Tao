@@ -1,7 +1,6 @@
 import Benefits from "../sections/Benefits"
 import Hero from "../sections/Hero"
 import Questions from "../sections/Questions"
-// import About from "../sections/About"
 
 const About = () => {
 	return (
@@ -16,8 +15,8 @@ const About = () => {
 				}
 				bgUrl="url('img/about-bg.jpg')"
 				isSmall={true}
+				isButton={true}
 			/>
-			{/* <About /> */}
 			<Benefits />
 			<Questions />
 		</main>
